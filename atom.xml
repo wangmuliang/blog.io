@@ -1,29 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Muge&#39;s GitHub Pages</title>
+  <title>M&#39;s GitHub Pages</title>
   
   <subtitle>Websites for me and my projects</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2019-03-13T13:17:32.076Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="https://wangmuliang.github.io/"/>
+  <updated>2019-03-16T12:21:46.250Z</updated>
+  <id>https://wangmuliang.github.io/</id>
   
   <author>
-    <name>慕 戈</name>
+    <name>M.Wang</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ABS逻辑门限值控制策略研究2</title>
+    <link href="https://wangmuliang.github.io/2019/03/16/ABS%E9%80%BB%E8%BE%91%E9%97%A8%E9%99%90%E5%80%BC%E6%8E%A7%E5%88%B6%E7%AD%96%E7%95%A5%E7%A0%94%E7%A9%B6%20-%20%E5%89%AF%E6%9C%AC/"/>
+    <id>https://wangmuliang.github.io/2019/03/16/ABS逻辑门限值控制策略研究 - 副本/</id>
+    <published>2019-03-16T12:21:30.029Z</published>
+    <updated>2019-03-16T12:21:46.250Z</updated>
+    
+    <content type="html"><![CDATA[<p>防抱死制动系统 ( anti - lock braking system,<br>ABS)能保证汽车在制动时的操纵稳定性和制动效<br>果 ,充分利用车轮与地面之间的附着力 ,产生稳定<br>的制动力 ,使车辆迅速地被制动 ,大大提高汽车的<br>行驶安全性 ,在发达国家 ABS已成为汽车标准配<br>置 ,我国也将 ABS列为重点开发内容. 所以 ,开展<br>对防抱死制动装置的研究具有重要的现实意义.</p><h2 id="1-汽车-ABS控制的原理"><a href="#1-汽车-ABS控制的原理" class="headerlink" title="1 汽车 ABS控制的原理"></a>1 汽车 ABS控制的原理</h2><a id="more"></a> <p>在驾驶员、汽车和环境三者所组成的闭环系<br>统中 ,汽车与环境之间的最基本联系是轮胎与路<br>面之间的作用力. 由于汽车行驶状态主要是由轮<br>胎与路面之间的纵向作用力与横向作用力决定<br>的 ,因此 ,车轮与路面之间的作用力必然要受到轮<br>胎与路面之间附着力的限制. ABS的作用是最大<br>限度地利用轮胎与路面的纵向和横向附着系数 ,<br>从而在制动过程中增强汽车的制动效能和稳定<br>性 ,防止侧滑和摆尾 ,同时在紧急制动过程中保持<br>转向能力. 有效利用纵向附着力可以缩短汽车制<br>动距离 ,同时也使轮胎的磨损大为减轻. 汽车的实<br>际车速与车轮滚动的圆周速度之间的差值称为车<br>轮的滑移率. 滑移率 S的定义式<br>[ 1 ]为 :</p><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">S =(V-wr) /v</span><br></pre></td></tr></table></figure><p>式中 : V 为车轮中心的速度 ;ω为车轮的角速度 ;</p><p>r为车轮滚动半径.<br>由上式可知 :当车轮中心的速度 V (即汽车的<br>实际车速 ) 等于车轮的角速度 ω和车轮滚动半径<br>r乘积时 ,滑移率为零 (S = 0) ,车轮为纯滚动 ;当 ω<br>= 0时 , S = 100%. 车轮完全抱死做纯滑动 ;当 0 &lt; S<br>&lt; 100%时 ,车轮既滚动又滑动. 图 1为试验得到的<br>硬路面上附着系数 Φ 与车轮滑移率 S 的关系曲<br>线. 曲线 1是车轮与地面的纵向磨擦系数 ,曲线 2<br>是车轮与地面之间的横向附着系数. ABS使车轮<br>处于边滚边滑的运动状态 ,使纵向和横向附着系<br>数的利用得到最优化.<br><img src="https://wangmuliang.github.io/img/2.jpg" alt="image"></p><h2 id="2-控制策略"><a href="#2-控制策略" class="headerlink" title="2 控制策略"></a>2 控制策略</h2><p>这种控制策略是基于车轮角速度变化与制动 力矩、附着系数和滑移率变化有强烈的敏感性 ,在<br>制动过程中 ,车轮抱死总是出现在角速度变化率<br>相当大的时刻. 因此可预选一个角减速度门限值 ,<br>当实际角减速度高于此门限值时 ,控制器发出指<br>令 ,开始释放制动压力使车轮得以加速旋转 ; 再新<br>选一个角加速度门限值 ,当车轮的角加速度达到<br>此门限值时 ,控制器又发出指令 ,使控制力矩开始<br>增大 ,车轮作减速运动. 所以可采用一个车轮角速<br>度传感器作为单轮信号 ,同时在电子控制器中设<br>置合理的加、减速度门限值 ,就可实现防抱死制动的循环. 图 2所示为高附着系数路面上的制动控制<br>过程<br><img src="https://wangmuliang.github.io/img/1.jpg" alt="image"></p><p>[ 2 ]<br>. 开始制动时 ,制动轮缸中的压力不断上<br>升 ,车轮角速度开始下降 ,而车轮的角减速度也不<br>断加大. 在第一阶段结束时 ,车轮减速度达到 - a<br>门限值. 为了避免车轮的滑移率处在稳定区的滑<br>移率范围内进入压力减小阶段 ,导致制动距离过<br>长 ,需同时对车轮的参考滑移率与滑移率下门限<br>值 S1 进行比较. 如果车轮的参考滑移率小于滑移<br>率控制下门限值 S1<br>,说明车轮的滑移率偏小 ,于是<br>进入第二阶段保压阶段 ,使车轮充分的进行制动.<br>知道车轮的参考滑移率大于控制下门限值 S1<br>,说<br>明车轮进入不稳定区域 ,第二阶段保压结束. 进入<br>第三阶段降压阶段 ,由于车轮制动压力的减小 ,车<br>轮在惯性力的作用下开始加速. 当车轮的角减速<br>度高于控制值 - a时 ,开始第四阶段保压阶段 ,此<br>时车轮由于惯性力作用继续加速 ,直到车轮加速<br>度达到较高门限值 + a. 为了适应可能出现的附着<br>系数突然增大的情况 ,又设定了第二角加速度控<br>制门限值 +Ak<br>. 在设定的压力保持阶段 ,如果因为<br>附着系数突然增大而使车轮的角加速度超过控制<br>门限值 +Ak<br>,于是进入第五阶段开始升压 ,直到车<br>轮加速度再次低于较高门限值 +Ak<br>. 然后进入第六阶段保压阶段 ,当车轮恢复到稳定区域 ,开始进入<br>第七阶段. 为了使车轮在更长的时间内处于稳定<br>区域 ,制动压力进行增大和保持的快速转换 ,阶梯<br>增压 ,直到车轮的角减速度再次低于较高门限值</p><ul><li>a后 ,又开始进入制动压力减小阶段 ,也就是第<br>八阶段 ,以后重复第四到第八阶段. 通过上述分析<br>可以建立起该控制策略物理过程的数学模型.<h2 id="3系统模型"><a href="#3系统模型" class="headerlink" title="3系统模型"></a>3系统模型</h2><h2 id="3-1-单车轮仿真模型的建立"><a href="#3-1-单车轮仿真模型的建立" class="headerlink" title="3. 1 单车轮仿真模型的建立"></a>3. 1 单车轮仿真模型的建立</h2>为了研究的方便 ,建立了单轮制动系统 ,其制<br>动过程见图 3<br>[ 3 ]<img src="https://wangmuliang.github.io/img/3.jpg" alt="image"><br>.</li></ul><p>式中 : m 为系统质量 ; r为车轮滚动半径 ; V为车速 ;<br>Tu 为制动器的摩擦力矩 ; Fxb为地面制动力 ; u为地<br>面附着系数.<br><img src="https://wangmuliang.github.io/img/4.jpg" alt="image"></p><h2 id="3-2-液压系统模型"><a href="#3-2-液压系统模型" class="headerlink" title="3. 2 液压系统模型"></a>3. 2 液压系统模型</h2><p>仿真中液压模型是指 ECU根据信号判断发出<br>液压调节指令到液压系统的制动轮缸压力建立的<br>动态过程. 对 MK20 I型 ABS液压调节系统理论研<br>究和试验台试验 ,得到可信的仿真模型<br>[ 4 ]<br>:<img src="https://wangmuliang.github.io/img/5.jpg" alt="image"><br><img src="https://wangmuliang.github.io/img/6.jpg" alt="image"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;防抱死制动系统 ( anti - lock braking system,&lt;br&gt;ABS)能保证汽车在制动时的操纵稳定性和制动效&lt;br&gt;果 ,充分利用车轮与地面之间的附着力 ,产生稳定&lt;br&gt;的制动力 ,使车辆迅速地被制动 ,大大提高汽车的&lt;br&gt;行驶安全性 ,在发达国家 ABS已成为汽车标准配&lt;br&gt;置 ,我国也将 ABS列为重点开发内容. 所以 ,开展&lt;br&gt;对防抱死制动装置的研究具有重要的现实意义.&lt;/p&gt;
+&lt;h2 id=&quot;1-汽车-ABS控制的原理&quot;&gt;&lt;a href=&quot;#1-汽车-ABS控制的原理&quot; class=&quot;headerlink&quot; title=&quot;1 汽车 ABS控制的原理&quot;&gt;&lt;/a&gt;1 汽车 ABS控制的原理&lt;/h2&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ABS逻辑门限值控制策略研究</title>
+    <link href="https://wangmuliang.github.io/2019/03/16/ABS%E9%80%BB%E8%BE%91%E9%97%A8%E9%99%90%E5%80%BC%E6%8E%A7%E5%88%B6%E7%AD%96%E7%95%A5%E7%A0%94%E7%A9%B6/"/>
+    <id>https://wangmuliang.github.io/2019/03/16/ABS逻辑门限值控制策略研究/</id>
+    <published>2019-03-16T12:17:25.340Z</published>
+    <updated>2017-07-31T11:59:16.479Z</updated>
+    
+    <content type="html"><![CDATA[<p>防抱死制动系统 ( anti - lock braking system,<br>ABS)能保证汽车在制动时的操纵稳定性和制动效<br>果 ,充分利用车轮与地面之间的附着力 ,产生稳定<br>的制动力 ,使车辆迅速地被制动 ,大大提高汽车的<br>行驶安全性 ,在发达国家 ABS已成为汽车标准配<br>置 ,我国也将 ABS列为重点开发内容. 所以 ,开展<br>对防抱死制动装置的研究具有重要的现实意义.</p><h2 id="1-汽车-ABS控制的原理"><a href="#1-汽车-ABS控制的原理" class="headerlink" title="1 汽车 ABS控制的原理"></a>1 汽车 ABS控制的原理</h2><a id="more"></a> <p>在驾驶员、汽车和环境三者所组成的闭环系<br>统中 ,汽车与环境之间的最基本联系是轮胎与路<br>面之间的作用力. 由于汽车行驶状态主要是由轮<br>胎与路面之间的纵向作用力与横向作用力决定<br>的 ,因此 ,车轮与路面之间的作用力必然要受到轮<br>胎与路面之间附着力的限制. ABS的作用是最大<br>限度地利用轮胎与路面的纵向和横向附着系数 ,<br>从而在制动过程中增强汽车的制动效能和稳定<br>性 ,防止侧滑和摆尾 ,同时在紧急制动过程中保持<br>转向能力. 有效利用纵向附着力可以缩短汽车制<br>动距离 ,同时也使轮胎的磨损大为减轻. 汽车的实<br>际车速与车轮滚动的圆周速度之间的差值称为车<br>轮的滑移率. 滑移率 S的定义式<br>[ 1 ]为 :</p><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">S =(V-wr) /v</span><br></pre></td></tr></table></figure><p>式中 : V 为车轮中心的速度 ;ω为车轮的角速度 ;</p><p>r为车轮滚动半径.<br>由上式可知 :当车轮中心的速度 V (即汽车的<br>实际车速 ) 等于车轮的角速度 ω和车轮滚动半径<br>r乘积时 ,滑移率为零 (S = 0) ,车轮为纯滚动 ;当 ω<br>= 0时 , S = 100%. 车轮完全抱死做纯滑动 ;当 0 &lt; S<br>&lt; 100%时 ,车轮既滚动又滑动. 图 1为试验得到的<br>硬路面上附着系数 Φ 与车轮滑移率 S 的关系曲<br>线. 曲线 1是车轮与地面的纵向磨擦系数 ,曲线 2<br>是车轮与地面之间的横向附着系数. ABS使车轮<br>处于边滚边滑的运动状态 ,使纵向和横向附着系<br>数的利用得到最优化.<br><img src="https://wangmuliang.github.io/img/2.jpg" alt="image"></p><h2 id="2-控制策略"><a href="#2-控制策略" class="headerlink" title="2 控制策略"></a>2 控制策略</h2><p>这种控制策略是基于车轮角速度变化与制动 力矩、附着系数和滑移率变化有强烈的敏感性 ,在<br>制动过程中 ,车轮抱死总是出现在角速度变化率<br>相当大的时刻. 因此可预选一个角减速度门限值 ,<br>当实际角减速度高于此门限值时 ,控制器发出指<br>令 ,开始释放制动压力使车轮得以加速旋转 ; 再新<br>选一个角加速度门限值 ,当车轮的角加速度达到<br>此门限值时 ,控制器又发出指令 ,使控制力矩开始<br>增大 ,车轮作减速运动. 所以可采用一个车轮角速<br>度传感器作为单轮信号 ,同时在电子控制器中设<br>置合理的加、减速度门限值 ,就可实现防抱死制动的循环. 图 2所示为高附着系数路面上的制动控制<br>过程<br><img src="https://wangmuliang.github.io/img/1.jpg" alt="image"></p><p>[ 2 ]<br>. 开始制动时 ,制动轮缸中的压力不断上<br>升 ,车轮角速度开始下降 ,而车轮的角减速度也不<br>断加大. 在第一阶段结束时 ,车轮减速度达到 - a<br>门限值. 为了避免车轮的滑移率处在稳定区的滑<br>移率范围内进入压力减小阶段 ,导致制动距离过<br>长 ,需同时对车轮的参考滑移率与滑移率下门限<br>值 S1 进行比较. 如果车轮的参考滑移率小于滑移<br>率控制下门限值 S1<br>,说明车轮的滑移率偏小 ,于是<br>进入第二阶段保压阶段 ,使车轮充分的进行制动.<br>知道车轮的参考滑移率大于控制下门限值 S1<br>,说<br>明车轮进入不稳定区域 ,第二阶段保压结束. 进入<br>第三阶段降压阶段 ,由于车轮制动压力的减小 ,车<br>轮在惯性力的作用下开始加速. 当车轮的角减速<br>度高于控制值 - a时 ,开始第四阶段保压阶段 ,此<br>时车轮由于惯性力作用继续加速 ,直到车轮加速<br>度达到较高门限值 + a. 为了适应可能出现的附着<br>系数突然增大的情况 ,又设定了第二角加速度控<br>制门限值 +Ak<br>. 在设定的压力保持阶段 ,如果因为<br>附着系数突然增大而使车轮的角加速度超过控制<br>门限值 +Ak<br>,于是进入第五阶段开始升压 ,直到车<br>轮加速度再次低于较高门限值 +Ak<br>. 然后进入第六阶段保压阶段 ,当车轮恢复到稳定区域 ,开始进入<br>第七阶段. 为了使车轮在更长的时间内处于稳定<br>区域 ,制动压力进行增大和保持的快速转换 ,阶梯<br>增压 ,直到车轮的角减速度再次低于较高门限值</p><ul><li>a后 ,又开始进入制动压力减小阶段 ,也就是第<br>八阶段 ,以后重复第四到第八阶段. 通过上述分析<br>可以建立起该控制策略物理过程的数学模型.<h2 id="3系统模型"><a href="#3系统模型" class="headerlink" title="3系统模型"></a>3系统模型</h2><h2 id="3-1-单车轮仿真模型的建立"><a href="#3-1-单车轮仿真模型的建立" class="headerlink" title="3. 1 单车轮仿真模型的建立"></a>3. 1 单车轮仿真模型的建立</h2>为了研究的方便 ,建立了单轮制动系统 ,其制<br>动过程见图 3<br>[ 3 ]<img src="https://wangmuliang.github.io/img/3.jpg" alt="image"><br>.</li></ul><p>式中 : m 为系统质量 ; r为车轮滚动半径 ; V为车速 ;<br>Tu 为制动器的摩擦力矩 ; Fxb为地面制动力 ; u为地<br>面附着系数.<br><img src="https://wangmuliang.github.io/img/4.jpg" alt="image"></p><h2 id="3-2-液压系统模型"><a href="#3-2-液压系统模型" class="headerlink" title="3. 2 液压系统模型"></a>3. 2 液压系统模型</h2><p>仿真中液压模型是指 ECU根据信号判断发出<br>液压调节指令到液压系统的制动轮缸压力建立的<br>动态过程. 对 MK20 I型 ABS液压调节系统理论研<br>究和试验台试验 ,得到可信的仿真模型<br>[ 4 ]<br>:<img src="https://wangmuliang.github.io/img/5.jpg" alt="image"><br><img src="https://wangmuliang.github.io/img/6.jpg" alt="image"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;防抱死制动系统 ( anti - lock braking system,&lt;br&gt;ABS)能保证汽车在制动时的操纵稳定性和制动效&lt;br&gt;果 ,充分利用车轮与地面之间的附着力 ,产生稳定&lt;br&gt;的制动力 ,使车辆迅速地被制动 ,大大提高汽车的&lt;br&gt;行驶安全性 ,在发达国家 ABS已成为汽车标准配&lt;br&gt;置 ,我国也将 ABS列为重点开发内容. 所以 ,开展&lt;br&gt;对防抱死制动装置的研究具有重要的现实意义.&lt;/p&gt;
+&lt;h2 id=&quot;1-汽车-ABS控制的原理&quot;&gt;&lt;a href=&quot;#1-汽车-ABS控制的原理&quot; class=&quot;headerlink&quot; title=&quot;1 汽车 ABS控制的原理&quot;&gt;&lt;/a&gt;1 汽车 ABS控制的原理&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="Basic-theory" scheme="https://wangmuliang.github.io/categories/Basic-theory/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2019/03/13/hello-world/"/>
-    <id>http://yoursite.com/2019/03/13/hello-world/</id>
+    <link href="https://wangmuliang.github.io/2019/03/13/hello-world/"/>
+    <id>https://wangmuliang.github.io/2019/03/13/hello-world/</id>
     <published>2019-03-13T13:17:32.076Z</published>
     <updated>2019-03-13T13:17:32.076Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
     <summary type="html">
     
