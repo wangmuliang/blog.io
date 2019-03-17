@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>M&#39;s GitHub Pages</title>
+  <title>M.Wang&#39;s GitHub Pages</title>
   
   <subtitle>Websites for me and my projects</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wangmuliang.github.io/"/>
-  <updated>2019-03-16T12:21:46.250Z</updated>
+  <updated>2019-03-17T12:30:20.862Z</updated>
   <id>https://wangmuliang.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CET4</title>
+    <link href="https://wangmuliang.github.io/2019/03/17/CET4/"/>
+    <id>https://wangmuliang.github.io/2019/03/17/CET4/</id>
+    <published>2019-03-17T12:30:20.000Z</published>
+    <updated>2019-03-17T12:30:20.862Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>College English Test Band 4 and Band 6</title>
+    <link href="https://wangmuliang.github.io/2019/03/17/College-English-Test-Band-4-and-Band-6/"/>
+    <id>https://wangmuliang.github.io/2019/03/17/College-English-Test-Band-4-and-Band-6/</id>
+    <published>2019-03-17T12:19:47.000Z</published>
+    <updated>2019-03-17T12:22:07.940Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="College English Test Band 4 and Band 6" scheme="https://wangmuliang.github.io/categories/College-English-Test-Band-4-and-Band-6/"/>
+    
+    
+      <category term="CET4&amp;6" scheme="https://wangmuliang.github.io/tags/CET4-6/"/>
+    
+  </entry>
   
   <entry>
     <title>ABS逻辑门限值控制策略研究2</title>
