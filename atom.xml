@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wangmuliang.github.io/"/>
-  <updated>2019-03-17T12:30:20.862Z</updated>
+  <updated>2019-03-18T11:57:37.872Z</updated>
   <id>https://wangmuliang.github.io/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TPM Explained</title>
+    <link href="https://wangmuliang.github.io/2019/03/18/TPM-Explained/"/>
+    <id>https://wangmuliang.github.io/2019/03/18/TPM-Explained/</id>
+    <published>2019-03-18T11:28:04.000Z</published>
+    <updated>2019-03-18T11:57:37.872Z</updated>
+    
+    <content type="html"><![CDATA[<p>Total productive maintenance</p><p>From Wikipedia, the free encyclopedia</p><p>In industry, total productive maintenance (TPM) is a system of maintaining and improving the integrity of production and quality systems through the machines, equipment, processes, and employees that add business value to an organization</p><p>TPM focuses on keeping all equipment in top working condition to avoid breakdowns and delays in manufacturing processes.<br>Contents</p><pre><code>1 History2 Objectives    2.1 Principles3 Implementation4 Difference from TQM5 References</code></pre><p>History</p><p>Total Productive Maintenance (TPM) was developed by Seiich Nakajima based on experience of the practical application of maintenance best practice in Japan between 1950 and 1970. This experience led to the recognition that a leadership mindset engaging front line teams in small group improvement activity is an essential element of effective operation. The outcome from his work was the application of the TPM process in 1971. One of the first companies to gain from this was Nippondenso, a company that created parts for Toyota.[1] They became the first winner of the PM prize. An internationally accepted TPM benchmark developed by the JIPM [Seiichi Nakajima]] is therefore regarded as the father of TPM.[2]. The classic TPM process he developed consisting of 5 principles was later enhanced by the JIPM to incorporate many of the lessons of Lean Manufacturing and is referred to as Company Wide TPM which consists of 8 principles/pillar.<br>Objectives</p><p>The goal of TPM is the continous improvement of equipment effectiveness through engaging those that impact on it in small group improvement activities. Total quality management (TQM) and total productive maintenance (TPM) are considered as the key operational activities of the quality management system. In order for TPM to be effective, the full support of the total workforce is required. This should result in accomplishing the goal of TPM: “Enhance the volume of the production, employee morale and job satisfaction.”[3]</p><p>The main objective of TPM is to increase the Overall Equipment Effectiveness (OEE) of plant equipment. TPM addresses the causes for accelerated deterioration while creating the correct environment between operators and equipment to create ownership.</p><p>OEE has three factors which are multiplied to give one measure called OEE<br>Performance x Availability x Quality = OEE</p><p>Each factor has two associated losses making 6 in total, these 6 losses are as follows:</p><p>Performance = (1) running at reduced speed - (2) Minor Stops</p><p>Availability = (3) Breakdowns - (4) Product changeover</p><p>Quality = (5) Startup rejects - (6) Running rejects</p><p>The objective finally is to identify then prioritize and eliminate the causes of the losses. This is done by self-managing teams that solve problem. Employing consultants to create this culture is common practice.<br>Principles</p><p>The eight pillars of TPM are mostly focused on proactive and preventive techniques for improving equipment reliability:</p><pre><code>Autonomous MaintenanceFocused ImprovementPlanned MaintenanceQuality managementEarly/equipment managementEducation and TrainingAdministrative &amp; office TPMSafety Health Environment</code></pre><p>With the help of these pillars we can increase productivity. Manufacturing support.[4]<br>Implementation</p><p>Following are the steps involved by the implementation of TPM in an organization:[2]</p><pre><code>Initial evaluation of TPM level,Introductory Education and Propaganda (IEP) for TPM,Formation of TPM committee,Development of master plan for TPM implementation,Stage by stage training to the employees and stakeholders on all eight pillars of TPM,Implementation preparation process,Establishing the TPM policies and goals and development of a road map for TPM implementation.</code></pre><p>According to Nicholas,[5] the steering committee should consist of production managers, maintenance managers, and engineering managers. The committee should formulate TPM policies and strategies and give advice. This committee should be led by a top-level executive. Also a TPM program team must rise, this program team has oversight and coordination of implementation activities. As well, it’s lacking some crucial activities, like starting with partial implementation. Choose the first target area as a pilot area, this area will demonstrate the TPM concepts.[5] Lessons learned from early target areas/the pilot area can be applied further in the implementation process.</p><p>In the UK foundry industry an implementation model was published in several Foundryman magazines by the Institute of British Foundrymen. Journal articles written by Toni Carannante CEng, offer an implementation model with proven success and remain available from the Institute of Cast Metals Engineers (ICME).<br>Difference from TQM</p><p>Total quality management and total productive maintenance are often used interchangeably. However, TQM and TPM share a lot of similarities, but are considered as two different approaches in the official literature. TQM attempts to increase the quality of goods, services and concomitant customer satisfaction by raising awareness of quality concerns across the organization.[6]</p><p>TQM is based on five cornerstones: The product, the process that allows the product to be produced, the organization that provides the proper environment needed for the process to work, the leadership that guides the organization, and commitment to excellence throughout the organization.[7]</p><p>In other words, TQM focuses on the quality of the product, while TPM focuses on the equipment used to produce the products. By preventing equipment break-down, improving the quality of the equipment and by standardizing the equipment (results in less variance, so better quality), the quality of the products increases. TQM and TPM can both result in an increase of quality. However, the way of going there is different. TPM can be seen as a way to help achieving the goal of TQM.[citation needed]<br>References</p><p>“An Introduction tpm in <a href="http://www.plant-maintenance.com&quot;" target="_blank" rel="noopener">www.plant-maintenance.com&quot;</a>. Retrieved 2016-03-09.<br>“Seiichi Nakajima - The Principles and Practice of TPM”. <a href="http://www.cetpm.de" target="_blank" rel="noopener">www.cetpm.de</a>. Retrieved 2016-03-09.<br>Prabhuswamy, M; Nagesh, P; Ravikumar, K (February 2013). “Statistical Analysis and Reliability Estimation of Total Productive Maintenance”. IUP Journal of Operations Management. Rochester, NY: Social Science Electronic Publishing. XII (1): 7–20. SSRN 2246601.<br>“TPM-Total Productive Maintenance at LeanProduction.com”. Retrieved 7 March 2015.<br>Nicholas, John (1998). Competitive manufacturing management. Europe: McGraw-Hill.<br>Wienclaw, R (2008). Operations &amp; Business Process Management.</p><pre><code>Creech, Bill (1994). Five Pillars of TQM: How to Make Total Quality Management Work for You. E P Dutton.Carannante, Toni. TPM Implementation. https://getinfo.de/en/search/id/BLSE%3ARN118636090/http://www.tpmconsulting.org/dwnld/article/tpmww/TPM%20article3%20.pdf</code></pre><p>以上来源于 维基百科</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Total productive maintenance&lt;/p&gt;
+&lt;p&gt;From Wikipedia, the free encyclopedia&lt;/p&gt;
+&lt;p&gt;In industry, total productive maintenance (TPM) is a sys
+      
+    
+    </summary>
+    
+      <category term="EOP" scheme="https://wangmuliang.github.io/categories/EOP/"/>
+    
+      <category term="Professional English" scheme="https://wangmuliang.github.io/categories/EOP/Professional-English/"/>
+    
+      <category term="English Learning" scheme="https://wangmuliang.github.io/categories/English-Learning/"/>
+    
+    
+      <category term="EOP" scheme="https://wangmuliang.github.io/tags/EOP/"/>
+    
+      <category term="English Learning" scheme="https://wangmuliang.github.io/tags/English-Learning/"/>
+    
+  </entry>
   
   <entry>
     <title>CET4</title>
